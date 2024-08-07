@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Woods</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Playwrite+BE+VLG:wght@100..400&family=Sevillana&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Oswald", sans-serif;
+        }
+
+        .navbar{
+          position: sticky;
+          top: 0px;
+        }
+
+    </style>
+</head>
+<body class="bg-info-subtle">
+
+    <!-- navbar -->
+    <nav class="navbar bg-warning p-4" style="z-index: 1030;">
+        <div class="container-fluid">
+          <a class="navbar-brand fa-solid fa-bars"> Awesome Woods</a>
+          <form class="d-flex" role="search">
+            <div class="d-flex justify-content-around">
+              <button type="button" class="btn btn-success position-relative me-5 fa-solid fa-cart-shopping fa-bounce">
+              
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  9+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button type="button" class="btn btn-primary position-relative ms-5 fa-solid fa-user">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  2
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+            
+          </form>
+        </div>
+      </nav>
+
+    <!-- linksl̥ -->
+     <div class="bg-warning-subtle">
+        <ol class="d-flex justify-content-around m-1 p-3 list-unstyled">
+            <li>Products</li>
+            <li>Interior</li>
+            <li>Gallary</li>
+            <li>Contact</li>
+         </ol>
+     </div>
+
+     <!-- carousel -->
+     <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://wallpaperboat.com/wp-content/uploads/2019/12/furniture-01.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images4.alphacoders.com/260/260758.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/80/76/7d/80767dc048eefc4b2ca9e9934123d89a.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.smartwoodfurniture.com/wp-content/uploads/2023/07/sparklebed.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- images -->
+      <h1 class="text-center text-primary m-5">Gallary</h1>
+       <div class="d-flex justify-content-around m-3">
+        <img width="350px" src="https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_640.jpg" class="img-thumbnail" alt="...">
+        <img width="350px" src="https://cdn.pixabay.com/photo/2014/08/11/21/39/wall-416060_640.jpg" class="img-thumbnail" alt="...">
+        <img width="350px" src="https://cdn.pixabay.com/photo/2017/03/28/12/16/chairs-2181980_640.jpg" class="img-thumbnail" alt="...">
+        <img width="350px" src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_640.jpg" class="img-thumbnail" alt="...">
+       </div>
+
+       <div class="row m-5">
+        <div class="col-3"><img width="300px" height="300px" src="https://cdn.pixabay.com/photo/2018/03/08/18/13/chair-3209341_640.jpg" class="rounded-circle" alt="..."></div>
+        <div class="col-3"><img width="300px" height="300px" src="https://cdn.pixabay.com/photo/2018/07/11/06/03/interior-3530343_640.jpg" class="rounded-circle" alt="..."></div>
+        <div class="col-3"><img width="300px" height="300px" src="https://cdn.pixabay.com/photo/2022/08/24/05/42/inner-space-7406986_640.jpg" class="rounded-circle" alt="..."></div>
+        <div class="col-3"><img width="300px" height="300px" src="https://cdn.pixabay.com/photo/2015/09/04/23/29/minimal-923194_640.jpg" class="rounded-circle" alt="..."></div>
+       </div>
+
+       <!-- cards -->
+       <h1 class="text-center text-primary m-5">Products</h1>
+        <div class="d-flex justify-content-around m-3">
+            <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2016/01/26/11/09/design-1162241_640.jpg" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Wingback Chair <span class="badge text-bg-secondary bg-danger">New</span></h5>
+                  <p class="card-text">It is a type of armchair characterized by its distinctive “wings” that extend from the backrest to the armrests. These wings were originally designed to protect the sitter from drafts and to capture heat from a fireplace, making the chair a cozy spot in colder rooms.</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2019/10/10/07/14/chair-4538921_640.jpg" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Armchair</h5>
+                  <p class="card-text">An armchair is a type of chair that is designed for comfort and relaxation, characterized by having supports on each side for the arms. Armchairs come in a wide range of styles, from traditional to modern, and can be upholstered in various fabrics, leathers, and other materials. </p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2024/07/15/04/24/ai-generated-8895614_640.jpg" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Office Chair</h5>
+                  <p class="card-text">An office chair is designed for use at a desk in an office, typically featuring a swivel mechanism and adjustable height for ergonomic support.These chairs often include additional features like tilt and lumbar support to enhance comfort during long periods of sitting.</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2016/07/08/03/13/bench-1503636_640.jpg" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Garden Bench <span class="badge text-bg-secondary bg-danger">New</span></h5>
+                  <p class="card-text">A garden bench is a piece of outdoor furniture designed for seating in gardens, or patios. It often features a classic design with materials like wood, or stone, providing both functionality and aesthetic appeal. It serve as inviting spots for relaxation in the natural surroundings</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="d-flex justify-content-around m-3">
+            <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2021/12/29/18/22/table-6902452_640.png" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Office Desk</h5>
+                  <p class="card-text">An office desk is a piece of furniture designed for working, typically featuring a flat surface for writing or a computer. It often includes drawers for storing office supplies and documents. Modern office desks can vary in style and material, ranging from traditional wooden designs</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2018/04/05/16/31/swing-3293297_640.png" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Swing Frame <span class="badge text-bg-secondary bg-danger">New</span></h5>
+                  <p class="card-text">A swing frame is a structure designed to support a swing seat, allowing it to move back and forth. Typically made from materials like metal, wood, or plastic, swing frames can vary in design from simple and functional to ornate and decorative. They are commonly used in gardens, patios.</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2015/09/20/17/14/antique-furniture-948524_640.png" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Writing Desk <span class="badge text-bg-secondary bg-danger">New</span></h5>
+                  <p class="card-text">A writing desk is a piece of furniture designed for writing or using a computer, typically featuring a flat surface and drawers for storage. It can vary in style from traditional to modern, often made from wood, metal, or a combination of materials. </p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-warning" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2014/12/21/23/47/dresser-576045_1280.png" height="300px" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Chest of Drawers</h5>
+                  <p class="card-text">A chest of drawers is a piece of furniture used for storing clothes and other items, featuring multiple stacked drawers. It can vary in style from simple and functional to highly ornate, often made from wood or metal. Chests of drawers are commonly found in bedrooms and living spaces</p>
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- feedback -->
+        
+       <div class="row m-5 bg-warning-subtle">
+        <h1 class="text-center text-primary m-5">Your Feedback</h1>
+        <div class="col-6 ">
+          <div class="m-3">
+            <img src="./furniture.jpeg" width="400px" height="350px" alt="">
+          </div>
+        </div>
+        <div class="col-6 p-5">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter your feedback</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mt-5">
+            <button class="btn btn-primary text-light">Send</button>
+          </div>
+        </div>
+       </div>
+
+        <!-- footer -->
+        <footer class="bg-warning-subtle text-dark mt-4 p-3 text-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <h5>About Us</h5>
+                      <p class="text-start">This company specializes in crafting high-quality, stylish pieces for homes and offices.This company is known for its exceptional craftsmanship and innovative designs that blend functionality with elegance.</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h5>Contact</h5>
+                      <p>Email: awesomewoods@gmail.com</p>
+                      <p>Phone: +91 9995558880</p>
+                  </div>
+                  <div class="col-md-4 fs-2">
+                      <h5>Follow Us</h5><br>
+                      <div class="d-flex justify-content-evenly">
+                        <a href="#" class="text-dark fa-brands fa-x-twitter text-decoration-none"></a>
+                        <a href="#" class="text-dark fa-brands fa-instagram text-decoration-none"></a>
+                        <a href="#" class="text-dark fa-brands fa-facebook text-decoration-none"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="row mt-2">
+                  <div class="col-12">
+                      <p>© 2024 Awesome Woods. All rights reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+
+
+</body>
+</html>
